@@ -1,0 +1,19 @@
+ul {
+    list-style: none;
+}
+.list-group-item {
+    display: block;
+    float: left;
+    height: 30em;
+    width: 25em;
+    margin: 1em;
+    padding: 2em;
+}
+.staffThumb {
+    width: 180px;
+    height: auto;
+}
+li:hover {
+  cursor: pointer;
+  border: solid 2px grey;
+}

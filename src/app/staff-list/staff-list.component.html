@@ -1,0 +1,18 @@
+<div class="container">
+<ul class="list-group">
+  <legend>Our Staff</legend>
+  <li class="list-group-item" *ngFor="let staff of staffList" (click)="onSelect(staff)">
+    <div data-toggle="tooltip" title="Click to View Detail">
+      <div class="col-md-4">
+        <span class="badge  pull-right">
+          {{staff.JobTitle}} 
+        </span>
+      </div>
+      <div class="col-md-8">
+        <span class="listName"><h1>{{ staff.Name }}</h1></span>
+        <img class="staffThumb" src="{{ staff.ImageUrl }}" />
+      </div>
+    </div>
+  </li>
+</ul>
+</div>

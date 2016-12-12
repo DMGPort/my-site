@@ -1,0 +1,52 @@
+.carousel{
+    overflow:hidden;
+    margin-left: -30px;
+    width:110%;
+}
+.slides{
+    list-style:none;
+    position:relative;
+    width:300%;
+    overflow:hidden;
+    animation:carousel 30s infinite;
+}
+.slides > li{
+    max-height: 550px;
+    position:relative;
+    float:left;
+    width: 33.33333%;
+}
+.carousel img{
+    display:block;
+    width:100%;
+    max-width:100%;
+}
+.carousel h2{
+    font-family: 'Playfair Display SC', serif;
+    margin-bottom: 0;
+    font-size:3em;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    text-align:center;
+    color:#fff;
+    background-color:rgba(0,0,0,0.75);
+}
+.carousel h2:first-letter{
+    font-family: 'Great Vibes', cursive;
+    font-size: 150%
+}
+
+@keyframes carousel{
+    0%  { left:-5%; }
+    6% { left:-5%; }
+    25% { left:-105%; }
+    25% { left:-105%; }
+    45% { left:-205%; }
+    55% { left:-205%; }
+    75% { left:-105%; }
+    75% { left:-105%; }
+    100% { left:-5%; }
+}

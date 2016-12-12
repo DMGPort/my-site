@@ -1,0 +1,110 @@
+﻿/*____________________DMG Generic_______________________*/
+div > nav > ul > li {
+    list-style: none;
+    padding: 0;
+}
+div > nav > ul > li > a:hover {
+    color: lightsteelblue;
+    text-decoration: none; 
+}
+div nav a {
+    border: 0;
+    color: rgba(255, 255, 255, 0.95);
+    display: block;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.25em;
+    line-height: 1.75;
+    outline: 0;
+    padding: 1.35em 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*____________________Burger Start_______________________*/
+@media (min-width: 710px){
+    #burger-nav{
+        display: none;
+    }
+}
+#burger-nav {
+    background: rgba(0,0,0,0.75);
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    top: 0;
+}
+#burger-glyph {
+    font-size:26px;
+    padding: 12px 20px 12px 15px;
+    color: white;
+}
+/*_________________Navigation Start_____________________*/
+@media (max-width: 710px){
+    #dmg-nav{
+        display: none;
+    }
+}
+/*  Big Side Menu */
+#dmg-nav {
+    padding: 2.5em 2.5em 0.5em 2.5em;
+    background: rgba(0,0,0,0.75);
+    cursor: default;
+    height: 100vh;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    width: 18em;
+    z-index: 10000;
+}
+#dmg-nav > .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+}
+/*  Small Top Menu */
+@media screen and (max-width: 1280px) {
+    #dmg-nav {
+        height: 3.5em;
+        left: 0;
+        line-height: 3.5em;
+        overflow: hidden;
+        padding: 0;
+        text-align: center;
+        top: 0;
+        width: 100%;
+    }
+    #dmg-nav > .inner {
+        flex-direction: row;
+        align-items: stretch;
+        height: inherit;
+        line-height: inherit;
+    }
+    #dmg-nav nav {
+        height: inherit;
+        line-height: inherit;
+    }
+    #dmg-nav nav ul {
+        display: flex;
+        height: inherit;
+        line-height: inherit;
+        margin: 0;
+    }
+    #dmg-nav nav ul li {
+        display: block;
+        height: inherit;
+        line-height: inherit;
+        margin: 0 0 0 2em;
+        padding: 0;
+    }
+    #dmg-nav nav a {
+        height: inherit;
+        line-height: inherit;
+        padding: 0;
+    }
+}
