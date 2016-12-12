@@ -23,9 +23,9 @@ export class StaffListComponent implements OnInit {
   ngOnInit() {
      this.getStaff();
   }
-  
+  valid: string = "s";
   getStaff(){
-    this.http.get("http://localhost:57026/api/staff/getstaff")
+    this.http.get("http"+ this.valid +"://localhost:57026/api/staff/getstaff")
     .map(res => res.json())
     .subscribe((staff) => {
       this.staffList = staff;     
